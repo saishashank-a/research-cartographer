@@ -1,0 +1,13 @@
+# python
+backend/.venv/
+__pycache__/
+*.pyc
+backend/cartographer.db
+# node
+frontend/node_modules/
+frontend/.next/
+# os
+.DS_Store
+
+# build artifacts
+frontend/tsconfig.tsbuildinfo

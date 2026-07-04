@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  background: radial-gradient(1200px 600px at 20% -10%, #1a1a2e 0%, #0a0a0f 55%);
+  background-attachment: fixed;
+  color: #e5e7eb;
+  min-height: 100vh;
+}
+
+/* thin custom scrollbar */
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-thumb { background: #2a2a3a; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3a4e; }
+::-webkit-scrollbar-track { background: transparent; }
+
+.card {
+  @apply rounded-xl border border-white/10 bg-ink-700/60 backdrop-blur-sm;
+}
+.chip {
+  @apply inline-flex items-center rounded-full border border-white/10 bg-white/5 px-2.5 py-0.5 text-xs text-gray-300;
+}
+.glass-hover {
+  @apply transition hover:border-accent/40 hover:bg-ink-600/60;
+}
